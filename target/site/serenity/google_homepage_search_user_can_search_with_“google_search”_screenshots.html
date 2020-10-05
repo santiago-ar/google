@@ -154,7 +154,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-10-2020 18:37</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-10-2020 22:35</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">User can search with &ldquo;Google Search&rdquo;
+                                <span class="failing-color">User can search with &ldquo;Google Search&rdquo;
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -220,7 +220,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Invalid argument exception: invalid argument</span>
+                    <span class="error-message error-message-title">Assertion error: Expected: a string containing 'El nombre del viento - Wikipedia, la enciclopedia libre' but: was 'El nombre del viento (The Name of the Wind)'</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -236,11 +236,11 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.InvalidArgumentException </h4>
+                    <h4>java.lang.AssertionError </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.stepdefinitions.GoogleSearchStep.imOnTheHomepage(GoogleSearchStep.java:16)<br />✽.Im on the homepage(src/test/resources/features/google_search.feature:5)<br /></pre>
+                        <pre>co.stepdefinitions.GoogleSearchStep.theFirstResultIs(GoogleSearchStep.java:33)<br />✽.the first result is El nombre del viento (The Name of the Wind)(src/test/resources/features/google_search.feature:7)<br /></pre>
                     </div>
 
                 </div>
@@ -250,12 +250,12 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource2663671035977765454.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource16406307686880758580.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="ec96d69c5013b041dc4c69a5e291d42d96ad1ed0b53dcf19ac2241789993ed36.png" title=" Given Im on the homepage: <span class='error-color'>ERROR</span>" width="929"/>
+                <img src="93c279126fb544def67c411ca46c0051afd74c3d34155d73d9b204fd07d36b17.png" title=" Then the first result is El nombre del viento (The Name of the Wind): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

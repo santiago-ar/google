@@ -30,9 +30,9 @@ public class BasePage {
     public String getTextElement(WebElement element) {
         waitVisibility(element);
         if (element.getText().isEmpty()) {
-            return element.getText();
+            return null;
         } else {
-            return "null";
+            return element.getText();
         }
     }
 

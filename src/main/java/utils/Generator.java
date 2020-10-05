@@ -6,7 +6,7 @@ import pages.BasePage;
 
 public class Generator {
 
-    public static  <Page extends BasePage> Page getInstance (Class<Page> pageClass , WebDriver driver ) throws Exception {
+    public static  <T extends BasePage> T getInstance (Class<T> pageClass , WebDriver driver ) throws Exception {
         try {
             return PageFactory.initElements(driver,  pageClass);
         } catch (Exception e) {
